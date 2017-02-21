@@ -10,8 +10,8 @@ $(document).ready(function() {
     $("#non-voter").show();
   }
 
-  $("button#can't-vote").click(function() {
-    $("#voter").remove();
-    $("#non-voter").show();
+  $("button#cant-vote").click(function() {
+      $("#voter").remove();
+      $("#non-voter").show();
   })
 });
