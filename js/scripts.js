@@ -3,7 +3,15 @@ $(document).ready(function() {
 
   if (age > 18) {
     $("#voter").show();
+  } else if (age === 18) {
+    alert("Congratulations!");
+    $("#voter").show();
   } else {
     $("#non-voter").show();
   }
+
+  $("button#can't-vote").click(function() {
+    $("#voter").remove();
+    $("#non-voter").show();
+  })
 });
